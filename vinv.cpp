@@ -6,9 +6,8 @@
 
 using namespace std; 
 
-static bool comp(const vector<int>& vec1, const vector<int>& vec2) {
-    return vec1[0] < vec2[0];
-    }
+//What values to compare in vector, see function below main
+static bool comp(const vector<int>& vec1, const vector<int>& vec2);
 
 int main() {
     srand(time(NULL)); //Actual randomness
@@ -46,3 +45,7 @@ int main() {
         cout << endl;   
     }
 }
+
+static bool comp(const vector<int>& vec1, const vector<int>& vec2) {
+    return vec1[0] < vec2[0];
+    }
