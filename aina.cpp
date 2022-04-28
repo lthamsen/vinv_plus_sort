@@ -7,13 +7,6 @@
 
 using namespace std; 
 
-//What values to compare in vector, see function below main
-struct sort_left {
-    bool operator()(const long (&left)[SIZE], const long (&right)[SIZE]) {
-        return left[0] < right[0];
-    }
-};
-
 int main() {
     srand(time(NULL)); //Actual randomness
 
